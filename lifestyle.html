@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width, initial-scale=1">
+        <title>Lifestyle</title>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+        <header>
+            <div class= "box">
+                <div class= "logo">
+                    <img src="verona logo.jpeg" alt= "Verona City Logo">
+                </div>
+                <ul class= "nav-area">
+                    <li><a href= "index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="lifestyle.html">Lifestyle</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            
+
+        </header>
+        <div class="whole"> 
+        <div class="container">
+            <article>
+            <h1>The Lifestyle in Verona</h1>
+            <h2>Tourist Attractions</h2>
+            <p>There are many tourist attractions in the historical city of Verona. The Verona Arena, Piazza delle Erbe and the Torre dei Lamberti.The Verona Arena alone has over 500 000 yearly visitors who come to watch the opera performances. The Piazza delle Erbe is a city square that has many cafes that tourists may visit as well as many shops around the area. The Torre dei Lamberti, which was only 37 metres in it's early years, now stands at an impressive 84 metres gives visitors a 360-degree panoramic view of the city.</p>
+            </article>
+        </div>
+
+       <div class="container">
+        <div class="slideshow-container">
+          <div class="mySlides1">
+            <img src="verona arena.jpg" alt="Picture of Verona Arena" style="width:100%">
+            <div class="text">Verona Arena</div>
+          </div>
+        
+          <div class="mySlides1">
+            <img src="piazza-delle-erbe.jpg" alt="Picture of Piazza delle Erbe" style="width:100%">
+            <div class="text">Piazza delle Erbe</div>
+          </div>
+        
+          <div class="mySlides1">
+            <img src="torre dei lamberti.jpg" alt= "Picture of Torre dei Lamberti" style="width:100%">
+            <div class="text">Torre dei Lamberti</div>
+          </div>
+        
+          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+       </div>
+        
+          
+
+<div class="container">
+            <article>
+            <h2>The Fashion in Verona</h2>
+            <img src="winter clothing.jpg" alt="winter clothing"><br>
+            <p>In Verona, the weather in the summer is warm and humid while the weather in the winter is extremely cold. In Italy, fashion is one of the fads that are taken pretty seriously. How you present yourself and how you dress are a significant part of Italian culture. Towards the beginning of winter it is common for people to start layering up and wearing more neutral toned clothing. </p>
+            </article>
+</div>
+<div class="container">
+            <article>
+            <img src="summer clothing.jpg" alt="Summer clothing">
+            <p>In summer, people tend to wear more lightweight clothing to beat the heat. Women in Verona tend to wear dresses, skirts and shorts for the most part while the men wear shorts and jeans. </p>
+            <p>The clothing all year round tends to be stylish and chic because of the importance of the fashion industry in Verona and the whole of Italy. Clothing, Style and Beauty have been a big part of Italian culture for centuries and is said that it represents so much more than looking the part - but expressing who you are freely.</p>
+            <p>Photos like these showcase the street fashion in Verona. This was taken in one of the Cuty Squares.</p>
+          </article>
+        </div>
+       
+        <div class="container">
+            <article>
+            <h2>Dishes in Verona</h2>
+            <p>Three of the most popular dishes are Pastisada de Caval which is a horse meat stew, made with horse meat marinaded in red wine, onions, carrots, herbs and spices. Peara, which is a thick sauce made of meat broth, beef marrow, breadcrumbs, Grana cheese, butter and a lot of pepper. Lastly, Risotto all'Amarone whichis simply risotto made with Amarone wine. Amarone wine is growing increasingly more popular. These delicious meals can be found in some of the most popular restaurants in Verona, namely Zio Lele, Dari Ristorante & Enoteca and Latteria Verona ristorante.</p>
+            </article>
+        </div>  
+        <div class="container">
+        <div class="slideshow-container">
+          <div class="mySlides2">
+            <img src="pastissada-de-caval.jpg" alt= "Picture of Pastisada de Caval" style="width:100%">
+            <div class="text">Pastisada de Caval</div>
+          </div>
+        
+          <div class="mySlides2">
+            <img src="peara.jpg" alt= "Picture of Peara" style="width:100%">
+            <div class="text">Peara</div>
+          </div>
+        
+          <div class="mySlides2">
+            <img src="risotto all amarone.jpg" alt= "Picture of Risotto all'Amarone" style="width:100%">
+            <div class="text">Risotto all'Amarone</div>
+          </div>
+        
+          <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        </div> 
+      </div>         
+    </div>
+
+    <script>
+      var slideIndex = [1,1];
+      var slideId = ["mySlides1", "mySlides2"]
+      showSlides(1, 0);
+      showSlides(1, 1);
+      
+      function plusSlides(n, no) {
+        showSlides(slideIndex[no] += n, no);
+      }
+      
+      function showSlides(n, no) {
+        var i;
+        var x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) {slideIndex[no] = 1}    
+        if (n < 1) {slideIndex[no] = x.length}
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+        }
+        x[slideIndex[no]-1].style.display = "block";  
+      }
+      </script>
+        
+    </body>    
